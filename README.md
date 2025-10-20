@@ -2,6 +2,7 @@
 `npm run install:all`
 
 ## Запуск всего приложение (и бэк и фронт)
+из корня всего проект: 
 `npm run dev`
 или
 `npm run prod`
