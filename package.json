@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run start:dev --prefix server",
+    "prod:server": "npm run start:prod --prefix server",
+    "prod:client": "npm run preview --prefix client",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "prod": "concurrently \"npm run prod:client\" \"npm run prod:server\"",
+    "install:all": "concurrently \"npm install\" \"npm install --prefix client\" \"npm install --prefix server\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
